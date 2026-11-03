@@ -1,0 +1,31 @@
+const btnmenu = document. querySelector('#btnmenu');
+const menu = document.querySelector('#menu');
+const titulos = document.querySelectorAll('#menu .titulo');
+
+btnmenu.addEventListener('click', () => {
+    menu.classList.toggle('abierto');
+    btnmenu.classList.toggle('activo');});
+
+
+
+    //cerrar el menu al hacer click en un enlace
+
+    document.querySelectorAll('#menu a').forEach(enlace => {
+        enlace.addEventListener('click', () => {
+            menu.classList.remove('abierto');
+            btnmenu.classList.remove('activo');
+        });
+    });
+
+
+    // Acordion para los titulos del menu
+    titulos.forEach(titulo => {
+        titulo.addEventListener('click', () => {
+            const item  = titulo.parentElement;
+
+            document.querySelectorAll('.acordion .item').forEach(otro => {
+                if(otro !== item) otro.classList.remove('activo');
+            });
+            item.classList.toggle('activo');
+        });
+    });
