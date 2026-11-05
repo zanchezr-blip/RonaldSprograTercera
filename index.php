@@ -7,31 +7,10 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <section class="portada">
-        <h1>Bienvenido a su Taller Mecánico RS</h1>
-    </section>
-    <header class="header">
-        <a href="index.html" class="logo">Mi sitio</a>
+  
+<?php include "header.php"; ?>
 
-     <button class="hamburguesa" id="btnmenu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-    <nav class=" menu" id="menu">
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="nosotros.html">Acerca de</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-
-    </nav>
-
-    </header>
-
-     <main class="contenedor">
+ <main class="contenedor">
         <section class ="portada">
             <h1>Bienvenido a su Taller Mecánico RS</h1>
             <p>Somos tu taller de confianza, con calidad y honestidad, hacemos de tu seguridad y la de tu vehiculo nuestra prioridad.</p>
@@ -48,6 +27,10 @@
                 <li>Mecánica general y reparaciones</li>
                 <li>Electricidad y electrónica automotriz</li>
             </ul>
+        </section>
+        <div class="cards" id ="cards">
+
+        </div>
         </section>
 
         <section class="contacto-rapido">
@@ -74,33 +57,35 @@
         </div>
     </section>
 
+<div class="carrusel">
+        <img class="slide activa" src="img/Imagen1.jpg" alt="Imagen 1">
+        <img class="slide" src="img/Imagen2.jpg" alt="Imagen 2">
+        <img class="slide" src="img/Imagen3.jpg" alt="Imagen 3">
+        <button id="anterior" type="button">Anterior</button>
+        <button id="siguiente" type="button">Siguiente</button>
+        
+        </div>
+
     </main>
 <section class="preguntas">
         <h2>Preguntas Frecuentes</h2>
         <div class="acordion">
         <div class="item">
             <buttom class="titulo">¿Pregunta1?</buttom>
-             <div class="contenido"> <p>Respuesta a la pregunta 1.</p>
-            
+             <div class="contenido"> <p>Respuesta a la pregunta 1.</p></div>
+            </div>
          <div class="item">
             <buttom class="titulo">¿Pregunta2?</buttom>
-             <div class="contenido"> <p>Respuesta a la pregunta 2.</p>
-                        
+             <div class="contenido"> <p>Respuesta a la pregunta 2.</p></div>
+            </div>            
         <div class="item">
              <buttom class="titulo">¿Pregunta3?</buttom>
-            <div class="contenido"> <p>Respuesta a la pregunta 3.</p>
-    <footer>
-        <div>
-            <p><strong>Mi Sitio</strong></p>
-            <p> telefono: 98765432. correo: info@tallerrs.com</p>
-        </div>
-    <ul class=" redes">
-        <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-        <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-    </ul>
-     <p>&copy; 2026 Mi sitio.</p>
-    </footer>
+            <div class="contenido"> <p>Respuesta a la pregunta 3.</p>></div>
+                </div>
+                </section>
+  </main>
+  
+<?php include "footer.php"; ?>
 
     <script src="js/main.js" defer></script>
 </body>

@@ -50,8 +50,8 @@ img { max-width: 100%; height: auto; }
   display: flex ;
   flex-direction: column;
   gap: 5px;
-  padding: 5rem;
-  background-color: none;
+  padding: 0.5rem;
+  background: none;
   cursor: pointer;
   border: 0;
 }
@@ -88,7 +88,7 @@ img { max-width: 100%; height: auto; }
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  background-color: #f8f9fa;
+  background: #f8f9fa;
   text-align: center;
   padding: 1rem 0;
   margin-top: 2rem;
@@ -128,7 +128,7 @@ img { max-width: 100%; height: auto; }
   padding: 1rem;
   background: #ededee;
   border: 0;
-  border bottom: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
   text-align: left;
   outline: none;
   font-size: 1.2rem;
@@ -143,19 +143,24 @@ img { max-width: 100%; height: auto; }
   display: block;
 }
 
-
-Profesor 10:50
-@media (min-width: 701px) { .tarjeta { width: calc(50% - .5rem); } }
-@media (min-width: 991px) { .tarjeta { width: calc(33.333% - .67rem); } }
-
-Profesor 11:06
-/* base: celular */
 .menu { display: none;         /* lo abrirá la hamburguesa */
 width: 100%;
 }
 
 .menu.abierto { display: block; } 
 .menu.abierto ul { flex-direction: column; gap: 1rem; }
+
+
+.slide {
+  display: none;
+}
+
+.slide.activa {
+  display: block;
+}
+
+/* base: celular */
+
 
 
 @media (min-width: 501px) {
@@ -174,10 +179,10 @@ width: 100%;
 }
 
 @media (min-width: 991px) {
-  .menu { display: block; }       /* menú normal en pantalla grande */
+  .menu { display: block; width: auto; }       /* menú normal en pantalla grande */
   .hamburguesa { display: none; }
   .portada h1 { font-size: 2.6rem; }
-  .menu.abierto ul { flex-direction: column; gap: 0; }
+  .menu.abierto ul { flex-direction: row; gap: 0; }
   .tarjeta { width: calc(33.333% - 0.67rem); }
 }
 

@@ -7,26 +7,9 @@
     <link rel="stylesheet" href="css/estilos.css">
 </head>
 <body>
-    <header class="header">
-        <a href="index.html" class="logo">Mi Sitio</a>
+    
+<?php include "header.php"; ?>
 
-     <button class="hamburger" id="menu">
-        <span></span>
-        <span></span>
-        <span></span>
-    </button>
-
-    <nav class=" menu" id="menu">
-    <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="nosotros.html">Acerca de</a></li>
-        <li><a href="servicios.html">Servicios</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-
-    </nav>
-
-    </header>
     <main>
         <section class = "Servicios">
             <h1>Servicios</h1>
@@ -69,17 +52,7 @@
 
         </section>
 
-<footer>
-        <div>
-            <p><strong>Mi Sitio</strong></p>
-            <p> telefono: 98765432. correo: info@tallerrs.com</p>
-        </div>
-    <ul class=" redes">
-        <li><a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a></li>
-        <li><a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a></li>
-        <li><a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a></li>
-    </ul>
-    </footer>
+<?php include "footer.php"; ?>
 
     <script src="js/main.js" defer></script>
 </body>
