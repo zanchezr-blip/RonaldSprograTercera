@@ -1,6 +1,6 @@
   <footer class= "footer">
         <div>
-            <p><strong>Mi Sitio</strong></p>
+            <p><strong>Contactenos</strong></p>
             <p> telefono: 98765432. correo: info@tallerrs.com</p>
         </div>
     <ul class=" redes">

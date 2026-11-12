@@ -79,7 +79,7 @@ img { max-width: 100%; height: auto; }
   padding: 3rem 1rem;
 }
 
-.portdada h1 {
+.portada h1 {
   margin: 0 0 1rem;
   font-size: 1.8rem;
 }
@@ -111,7 +111,7 @@ img { max-width: 100%; height: auto; }
 
 .tarjeta {
   width: 100%;
-  box-shadow: 0.2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   background-color: #fff;
   border-radius: 8px;
   overflow: hidden;
@@ -122,7 +122,7 @@ img { max-width: 100%; height: auto; }
   transform: translateY(-4px);
 }
 
-.acordion.titulo {
+.acordion .titulo {
   width: 100%;
   cursor: pointer;
   padding: 1rem;
@@ -161,13 +161,27 @@ width: 100%;
 
 /* base: celular */
 
+.carrusel {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto; /* Centra el carrusel en la página */
+}
 
+.carrusel .slide {
+  width: 100%;
+  height: 250px;     /* Altura uniforme en celulares */
+  object-fit: cover; /* Recorta sin aplastar ni estirar */
+  object-position: center;
+}
 
 @media (min-width: 501px) {
   .portada h1 { font-size: 2.1rem; }
 }
 
 @media (min-width: 701px) {
+  .carrusel .slide {
+    height: 420px;   /* Altura uniforme en pantallas grandes */
+  }
   .portada { padding: 4rem 2rem; }
   .footer {
     flex-direction: row;

@@ -32,9 +32,12 @@ btnmenu.addEventListener('click', () => {
 //Arreglo de onjetos
 
 const servicios = [
-    {titulo: "lavado", precio: 8000, img: "img/imagen1.jpg"},
-    {titulo: "pulido", precio: 5000, img: "img/imagen2.jpg"},
-    {titulo: "encerado", precio: 10000, img: "img/imagen3.jpg"}
+    {titulo: "Mecánica Rápida", precio: 5000, img: "img/imagen1.jpg"},
+    {titulo: "Diagnóstico computarizado", precio: 25000, img: "img/imagen2.jpg"},
+    {titulo: "Cambio de aceite y filtros", precio: 30000, img: "img/imagen3.jpg"},
+    {titulo: "Mecánica Genera y reparaciones", precio: 40000, img: "img/imagen4.jpg"},
+    {titulo: "Cambio de llantas, tramado y alineado", precio: 20000, img: "img/imagen5.jpg"},
+    {titulo: "Electricidad automotriz", precio: 30000, img: "img/imagen6.jpg"}
 ];
 
 const contenedor = document.querySelector("#cards");

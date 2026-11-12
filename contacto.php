@@ -15,7 +15,7 @@
         <input type="text" id="nombre" name="nombre" required>
 
         <label for="email">Correo electrónico:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="correo" name="correo" required>
 
         <label for="mensaje">Mensaje:</label>
         <textarea id="mensaje" name="mensaje" required></textarea>
